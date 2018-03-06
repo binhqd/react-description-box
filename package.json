@@ -21,11 +21,11 @@
     "type": "git",
     "url": "git@github.com:binhqd/react-description-box.git"
   },
-  "scripts": {
-    
-  },
+  "scripts": {},
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "str_shorten": "^1.0.5"
+  },
   "devDependencies": {
     "coveralls": "^3.0.0",
     "istanbul": "^0.4.5",
