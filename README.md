@@ -40,3 +40,8 @@ Contributions are welcome!
 Thanks to the following repositories for code and inspiration:
 
 - [React Component Boilerplate](https://github.com/survivejs/react-component-boilerplate)
+
+## License
+Copyright (c) 2018 Binh Quan
+
+Licensed under the MIT license.
