@@ -1,12 +1,14 @@
 react-description-box
 ====================
+Customizable React component that can shorten long text using str_shorten library for better display
 
 ## Quickstart
+Install the module with:
+```
+npm install --save react-description-box
+```
 
 ## Getting Started
-
-### Requirements
-
 ### Example
 ```javascript
 <DescriptionBox maxChars='11' content="You will win if you want"/>
