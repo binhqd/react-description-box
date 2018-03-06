@@ -9,8 +9,12 @@ npm install --save react-description-box
 ```
 
 ## Getting Started
+Import `DescriptionBox` to your React Component
+```jsx
+import DescriptionBox from 'react-description-box'
+```
 ### Example
-```javascript
+```jsx
 <DescriptionBox maxChars='11' content="You will win if you want"/>
 ```
 
@@ -19,14 +23,12 @@ npm install --save react-description-box
 ## Useful Links
 
 ## Contributing
+Contributions are welcome!
 
 ### Fix issue with system watchers
 ```
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
-
-Contributions are welcome!
-
 ## Thanks
 
 Thanks to the following repositories for code and inspiration:
