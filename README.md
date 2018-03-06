@@ -11,7 +11,7 @@ npm install --save react-description-box
 ## Getting Started
 Import `DescriptionBox` to your React Component
 ```jsx
-import DescriptionBox from 'react-description-box'
+import DescriptionBox from 'react-description-box';
 ```
 ### Example
 ```jsx
