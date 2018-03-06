@@ -5,10 +5,9 @@ class DescriptionBox extends React.Component {
 
   render() {
     return (
-      <div>{strShorten(this.props.content, 300)}</div>
+      <div>{strShorten(this.props.content, this.props.maxChars)}</div>
     );
   }
-
 }
 
 export default DescriptionBox;
