@@ -1,3 +1,63 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "binaryLiterals": true,
+      "blockBindings": true,
+      "defaultParams": true,
+      "forOf": true,
+      "generators": true,
+      "impliedStrict": true,
+      "modules": true,
+      "objectLiteralComputedProperties": true,
+      "objectLiteralDuplicateProperties": true,
+      "objectLiteralShorthandMethods": true,
+      "objectLiteralShorthandProperties": true,
+      "octalLiterals": true,
+      "regexUFlag": true,
+      "regexYFlag": true,
+      "templateStrings": true,
+      "unicodeCodePointEscapes": true,
+      "jsx": true
+    },
+    "parser": "esprima",
+    "sourceType": "module"
+  },
+
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+
+  "globals": {
+
+  },
+
+  "plugins": [
+
+  ],
+
+  "extends": "eslint:recommended",
+  "overrides": [
+    {
+      "files": [ "*.js" ],
+      "excludedFiles": "test/*.js"
+    }
+  ],
+  "rules": {
+    "arrow-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
       }
     ],
     "eqeqeq": "error",
