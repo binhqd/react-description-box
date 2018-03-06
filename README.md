@@ -17,7 +17,10 @@ import DescriptionBox from 'react-description-box';
 ```jsx
 <DescriptionBox maxChars='11' content="You will win if you want"/>
 ```
-
+The output will be
+```
+You will...
+```
 ## Options
 
 ## Useful Links
