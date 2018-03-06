@@ -26,14 +26,15 @@ You will...
 
 ## Useful Links
 
-## Contributing
-Contributions are welcome!
-
 ## Development
 ### Fix issue with system watchers
 ```
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
+
+## Contributing
+Contributions are welcome!
+
 ## Thanks
 
 Thanks to the following repositories for code and inspiration:
