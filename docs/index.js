@@ -19,6 +19,11 @@ const pages = [
     path: '/',
     title: 'Introduction',
     content: pageLoader(() => import('../README.md'))
+  },
+  {
+    path: '/usage',
+    title: 'Usage',
+    content: pageLoader(() => import('./usage.md'))
   }
 ];
 
@@ -41,7 +46,7 @@ ReactDOM.render(
         js: props => <CodeSpecimen {...props} lang="javascript" />,
         jsx: props => <ReactSpecimen {...props} />
       }}
-      title="Boilerplate"
+      title="React Description Box"
     />
   </div>,
   document.getElementById('catalog')
