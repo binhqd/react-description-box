@@ -15,7 +15,8 @@ import DescriptionBox from 'react-description-box';
 ```
 ### Example
 ```jsx
-<DescriptionBox maxChars='11' content="You will win if you want"/>
+let content = "You will win if you want";
+<DescriptionBox maxChars='11' content={content}/>
 ```
 The output will be
 ```
