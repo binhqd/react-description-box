@@ -1,0 +1,34 @@
+{
+  "author": "Binh Quan <binhqd@gmail.com>",
+  "name": "react-description-box",
+  "main": "index.js",
+  "description": "Customizable React component that can shorten long text using str_shorten library for better display",
+  "version": "0.1.0",
+  "keywords": [
+    "react",
+    "reactjs",
+    "shorten",
+    "string",
+    "description",
+    "brief",
+    "truncate",
+    "ellipsize",
+    "boundary",
+    "word boundary",
+    "str_shorten"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:binhqd/react-description-box.git"
+  },
+  "scripts": {
+    
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.1"
+  }
+}
