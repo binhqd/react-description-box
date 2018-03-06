@@ -10,7 +10,10 @@ import '../style.css';
 
 // Add your documentation imports here. These are available to
 // React specimen. Do NOT pass React here as Catalog does that.
-const documentationImports = {};
+const documentationImports = {
+  DescriptionBox: require('DescriptionBox')
+};
+
 const pages = [
   {
     path: '/',
@@ -23,7 +26,7 @@ const pages = [
 ReactDOM.render(
   <div>
     <GithubCorner
-      href="https://github.com/survivejs/react-component-boilerplate"
+      href="https://github.com/binhqd/react-description-box"
       bannerColor="#fff"
       octoColor="#000"
       width={80}
