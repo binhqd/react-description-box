@@ -1,7 +1,6 @@
 {
   "author": "Binh Quan <binhqd@gmail.com>",
   "name": "react-description-box",
-  "main": "index.js",
   "description": "Customizable React component that can shorten long text using str_shorten library for better display",
   "version": "0.1.0",
   "keywords": [
@@ -21,14 +20,76 @@
     "type": "git",
     "url": "git@github.com:binhqd/react-description-box.git"
   },
-  "scripts": {},
+  "scripts": {
+    "start": "catalog start docs",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:lint": "eslint . --ignore-path .gitignore",
+    "gh-pages": "catalog build docs",
+    "gh-pages:deploy": "gh-pages -d docs/build",
+    "dist:es6": "del-cli ./dist-es6 && cross-env BABEL_ENV=es6 babel ./src --out-dir ./dist-es6",
+    "dist:modules": "del-cli ./dist-modules && cross-env BABEL_ENV=modules babel ./src --out-dir ./dist-modules",
+    "preversion": "npm run test",
+    "prepublishOnly": "npm run dist:es6 && npm run dist:modules",
+    "postpublish": "npm run gh-pages && npm run gh-pages:deploy",
+    "postinstall": "node lib/post_install.js"
+  },
   "license": "MIT",
+  "main": "dist-modules",
+  "module": "dist-es6",
+  "jsnext:main": "dist-es6",
   "dependencies": {
     "str_shorten": "^1.0.5"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "catalog": "^3.4.0",
+    "chai": "^4.1.2",
     "coveralls": "^3.0.0",
+    "cross-env": "^5.1.3",
+    "del-cli": "^1.1.0",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "gh-pages": "^1.1.0",
+    "git-prepush-hook": "^1.0.2",
     "istanbul": "^0.4.5",
-    "mocha": "^5.0.1"
-  }
+    "jest": "^22.4.2",
+    "mocha": "^5.0.1",
+    "purecss": "^1.0.0",
+    "react": "^16.2.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.2.0",
+    "react-github-corner": "^2.1.0",
+    "rimraf": "^2.6.2",
+    "sync-exec": "^0.6.2",
+    "webpack": "^4.1.0"
+  },
+  "peerDependencies": {
+    "react": ">= 0.11.2 <= 16.0.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "packages"
+    ]
+  },
+  "pre-push": [
+    "test"
+  ]
 }

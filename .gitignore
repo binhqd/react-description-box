@@ -1,2 +1,8 @@
-node_modules/
 yarn.lock
+docs/build/
+dist-es6/
+dist-modules/
+node_modules/
+coverage/
+npm-debug.log
+.eslintcache
