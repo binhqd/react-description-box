@@ -12,7 +12,9 @@ class DescriptionBox extends React.Component {
 }
 
 DescriptionBox.propTypes = {
-  component: PropTypes.func
+  component: PropTypes.func,
+  content: PropTypes.string,
+  maxChars: PropTypes.number
 };
 
 DescriptionBox.defaultProps = {
@@ -20,7 +22,9 @@ DescriptionBox.defaultProps = {
     return (
       <div>{props.children}</div>
     );
-  }
+  },
+  content: '',
+  maxChars: 300
 };
 
 export default DescriptionBox;
