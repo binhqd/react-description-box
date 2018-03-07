@@ -2,7 +2,7 @@
   "author": "Binh Quan <binhqd@gmail.com>",
   "name": "react-description-box",
   "description": "Customizable React component that can shorten long text using str_shorten library for better display",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "keywords": [
     "react",
     "reactjs",
