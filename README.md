@@ -48,6 +48,10 @@ The generated HTML will be
 ```
 
 ## Options
+| name         | default  | required | type     | description                                                                                                                |
+|--------------|----------|----------|----------|-----------------------------------------------------------------------------------------------------------------|
+| content      | empty       | false    | string   | Content of description box |
+| maxChars     | 300      | false    | number   | Max characters of description box. |
 
 ## Useful Links
 
