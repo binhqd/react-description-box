@@ -40,7 +40,7 @@
   "module": "dist-es6",
   "jsnext:main": "dist-es6",
   "dependencies": {
-    "str_shorten": "^1.0.5"
+    "str_shorten": "^1.0.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

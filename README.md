@@ -10,18 +10,43 @@ npm install --save react-description-box
 
 ## Getting Started
 Import `DescriptionBox` to your React Component
-```jsx
+```js
 import DescriptionBox from 'react-description-box';
 ```
 ### Example
-```jsx
+```js
 let content = "You will win if you want";
 <DescriptionBox maxChars='11' content={content}/>
 ```
 The output will be
 ```
-You will...
+<div>You will...</div>
 ```
+
+#### Customizable description box container
+```javascript
+<DescriptionBox maxChars='11'
+  content="You will win if you want"
+  component={(props) => {
+    return (
+      <ul>
+        <li>
+          {props.children}
+        <li>
+      </ul>
+    )
+  }}
+/>
+```
+The generated HTML will be
+```
+<ul>
+  <li>
+    You will...
+  </li>
+</ul>
+```
+
 ## Options
 
 ## Useful Links
