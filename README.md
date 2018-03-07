@@ -53,8 +53,6 @@ The generated HTML will be
 | content      | empty       | false    | string   | Content of description box |
 | maxChars     | 300      | false    | number   | Max characters of description box. |
 
-## Useful Links
-
 ## Development
 ### Fix issue with system watchers
 ```
