@@ -1,4 +1,5 @@
-react-description-box
+# react-description-box
+
 [![Build Status](https://travis-ci.org/binhqd/react-description-box.svg?branch=master)](https://travis-ci.org/binhqd/react-description-box)
 [![bitHound Score](https://www.bithound.io/github/binhqd/react-description-box/badges/score.svg)](https://www.bithound.io/github/binhqd/react-description-box)
 [![Coverage Status](https://coveralls.io/repos/binhqd/react-description-box/badge.svg?branch=master&time=2018.03)](https://coveralls.io/r/binhqd/react-description-box?branch=master)
