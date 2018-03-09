@@ -8,6 +8,7 @@
 [![Downloads](http://img.shields.io/npm/dm/react-description-box.svg)](https://www.npmjs.com/package/react-description-box)
 
 ====================
+
 Customizable React component that can shorten long text using str_shorten library for better display
 
 ## Quickstart
