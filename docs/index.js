@@ -31,12 +31,12 @@ const pages = [
 ReactDOM.render(
   <div>
     <GithubCorner
-      href="https://github.com/binhqd/react-description-box"
       bannerColor="#fff"
+      direction="right"
+      height={80}
+      href="https://github.com/binhqd/react-description-box"
       octoColor="#000"
       width={80}
-      height={80}
-      direction="right"
     />
     <Catalog
       imports={documentationImports}

@@ -19,9 +19,11 @@ DescriptionBox.propTypes = {
 
 DescriptionBox.defaultProps = {
   component: function(props) {
-    return (
-      <div>{props.children}</div>
-    );
+    if (!props.children)
+      return (
+        <div>{props.children}</div>
+      );
+    else return null;
   },
   content: '',
   maxChars: 300
