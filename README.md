@@ -1,4 +1,11 @@
 react-description-box
+[![Build Status](https://travis-ci.org/binhqd/react-description-box.svg?branch=master)](https://travis-ci.org/binhqd/react-description-box)
+[![bitHound Score](https://www.bithound.io/github/binhqd/react-description-box/badges/score.svg)](https://www.bithound.io/github/binhqd/react-description-box)
+[![Coverage Status](https://coveralls.io/repos/binhqd/react-description-box/badge.svg?branch=master&time=2018.03)](https://coveralls.io/r/binhqd/react-description-box?branch=master)
+[![bitHound Code](https://www.bithound.io/github/binhqd/react-description-box/badges/code.svg)](https://www.bithound.io/github/binhqd/react-description-box)
+[![npm version](https://img.shields.io/npm/v/react-description-box.svg?style=flat-square)](https://www.npmjs.com/package/react-description-box)
+[![Downloads](http://img.shields.io/npm/dm/react-description-box.svg)](https://www.npmjs.com/package/react-description-box)
+
 ====================
 Customizable React component that can shorten long text using str_shorten library for better display
 
