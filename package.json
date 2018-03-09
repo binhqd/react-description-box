@@ -24,6 +24,7 @@
     "start": "catalog start docs",
     "test": "jest",
     "test:coverage": "jest --coverage",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "test:watch": "jest --watch",
     "test:lint": "eslint . --ignore-path .gitignore",
     "gh-pages": "catalog build docs",
