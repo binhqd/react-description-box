@@ -7,7 +7,11 @@ class DescriptionBox extends React.Component {
   render() {
     let {content, maxChars} = this.props;
 
-    return <this.props.component>{strShorten(content, maxChars)}</this.props.component>;
+    if (this.props.component && content)
+      return <this.props.component>{strShorten(content, maxChars)}</this.props.component>;
+    else {
+      return null;
+    }
   }
 }
 
@@ -19,11 +23,9 @@ DescriptionBox.propTypes = {
 
 DescriptionBox.defaultProps = {
   component: function(props) {
-    if (props.children)
-      return (
-        <div>{props.children}</div>
-      );
-    else return null;
+    return (
+      <div>{props.children}</div>
+    );
   },
   content: '',
   maxChars: 300
