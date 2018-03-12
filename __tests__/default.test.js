@@ -25,3 +25,13 @@ test('DescriptionBox return null if component is null', () => {
   const wrapper = shallow(<DescriptionBox component={null} content={content} maxChars={11}/>);
   expect(wrapper.html()).toEqual(null);
 });
+
+test('DescriptionBox return readMore link', () => {
+
+  const wrapper = mount(<DescriptionBox content={content} maxChars={11} readMore={{
+    text: 'Read more',
+    link: 'http://google.com'
+  }}/>);
+
+  expect(wrapper.html()).toEqual('<div>You will...<a href=\"http://google.com\">Read more</a></div>');
+});
