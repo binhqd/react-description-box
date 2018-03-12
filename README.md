@@ -93,7 +93,7 @@ The generated HTML will be
 <ul>
   <li>
     You will...
-    <a href='http://google.com' target="**_blank**">Read more</a>
+    <a href='http://google.com' target="_blank">Read more</a>
   </li>
 </ul>
 ```
