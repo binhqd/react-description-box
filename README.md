@@ -71,7 +71,29 @@ The generated HTML will be
 <ul>
   <li>
     You will...
-    <a href='http://google.com'>Read more</a>
+    <a href='http://google.com' target="self">Read more</a>
+  </li>
+</ul>
+```
+
+
+#### Add 'Read more' link with custom 'target'
+```javascript
+<DescriptionBox maxChars='11'
+  content="You will win if you want"
+  readMore={{
+    text: 'Read more',
+    link: 'http://google.com',
+    target: '_blank'
+  }}
+/>
+```
+The generated HTML will be
+```
+<ul>
+  <li>
+    You will...
+    <a href='http://google.com' target="**_blank**">Read more</a>
   </li>
 </ul>
 ```
