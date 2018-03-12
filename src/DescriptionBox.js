@@ -7,16 +7,23 @@ class DescriptionBox extends React.Component {
   render() {
     let {content, maxChars} = this.props;
 
-    if (this.props.component && content)
+    if (this.props.component && content) {
+
+      let readMore = null;
+      if (this.props.readMore && this.props.readMore.text && this.props.readMore.link) {
+
+        let target = this.props.readMore.target || 'self';
+
+        readMore = <a href ={`${this.props.readMore.link}`} target={target}>{this.props.readMore.text}</a>;
+      }
+
       return (
         <this.props.component>
           {strShorten(content, maxChars)}
-          {
-            this.props.readMore && this.props.readMore.text && this.props.readMore.link &&
-            <a href ={`${this.props.readMore.link}`}>{this.props.readMore.text}</a>
-          }
+          {readMore}
         </this.props.component>
       );
+    }
     else {
       return null;
     }
