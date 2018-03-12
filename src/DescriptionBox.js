@@ -8,7 +8,15 @@ class DescriptionBox extends React.Component {
     let {content, maxChars} = this.props;
 
     if (this.props.component && content)
-      return <this.props.component>{strShorten(content, maxChars)}</this.props.component>;
+      return (
+        <this.props.component>
+          {strShorten(content, maxChars)}
+          {
+            this.props.readMore && this.props.readMore.text && this.props.readMore.link &&
+            <a href ={`${this.props.readMore.link}`}>{this.props.readMore.text}</a>
+          }
+        </this.props.component>
+      );
     else {
       return null;
     }
@@ -18,7 +26,8 @@ class DescriptionBox extends React.Component {
 DescriptionBox.propTypes = {
   component: PropTypes.func,
   content: PropTypes.string,
-  maxChars: PropTypes.number
+  maxChars: PropTypes.number,
+  readMore: PropTypes.object
 };
 
 DescriptionBox.defaultProps = {
@@ -27,6 +36,7 @@ DescriptionBox.defaultProps = {
       <div>{props.children}</div>
     );
   },
+  readMore: null,
   content: '',
   maxChars: 300
 };
