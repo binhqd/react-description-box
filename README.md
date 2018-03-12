@@ -56,11 +56,32 @@ The generated HTML will be
 </ul>
 ```
 
+#### Add 'Read more' link
+```javascript
+<DescriptionBox maxChars='11'
+  content="You will win if you want"
+  readMore={{
+    text: 'Read more',
+    link: 'http://google.com'
+  }}
+/>
+```
+The generated HTML will be
+```
+<ul>
+  <li>
+    You will...
+    <a href='http://google.com'>Read more</a>
+  </li>
+</ul>
+```
 ## Options
 | name         | default  | required | type     | description                                                                                                                |
 |--------------|----------|----------|----------|-----------------------------------------------------------------------------------------------------------------|
 | content      | empty       | false    | string   | Content of description box |
 | maxChars     | 300      | false    | number   | Max characters of description box. |
+| component     |  div component     | false    | React Component   | A function or class that generate component for the container |
+| readMore     | null      | false    | object   | An object that contains: <br/> * text: Link text <br/> * link: Destination url |
 
 ## Development
 ### Fix issue with system watchers
