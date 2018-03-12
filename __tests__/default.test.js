@@ -33,5 +33,16 @@ test('DescriptionBox return readMore link', () => {
     link: 'http://google.com'
   }}/>);
 
-  expect(wrapper.html()).toEqual('<div>You will...<a href=\"http://google.com\">Read more</a></div>');
+  expect(wrapper.html()).toEqual('<div>You will...<a href="http://google.com" target=\"self\">Read more</a></div>');
+});
+
+test('DescriptionBox return readMore link with target=_blank', () => {
+
+  const wrapper = mount(<DescriptionBox content={content} maxChars={11} readMore={{
+    text: 'Read more',
+    link: 'http://google.com',
+    target: '_blank'
+  }}/>);
+
+  expect(wrapper.html()).toEqual('<div>You will...<a href="http://google.com" target=\"_blank\">Read more</a></div>');
 });
