@@ -33,7 +33,7 @@ test('DescriptionBox return readMore link', () => {
     link: 'http://google.com'
   }}/>);
 
-  expect(wrapper.html()).toEqual('<div>You will...<a href="http://google.com" target=\"self\">Read more</a></div>');
+  expect(wrapper.html()).toEqual('<div>You will...<a href="http://google.com" target="self">Read more</a></div>');
 });
 
 test('DescriptionBox return readMore link with target=_blank', () => {
@@ -44,5 +44,5 @@ test('DescriptionBox return readMore link with target=_blank', () => {
     target: '_blank'
   }}/>);
 
-  expect(wrapper.html()).toEqual('<div>You will...<a href="http://google.com" target=\"_blank\">Read more</a></div>');
+  expect(wrapper.html()).toEqual('<div>You will...<a href="http://google.com" target="_blank">Read more</a></div>');
 });
